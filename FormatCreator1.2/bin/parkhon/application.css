@@ -1,0 +1,55 @@
+#p_root {
+	-fx-background-color: #81A2A5;
+}
+
+#p_toolbar {
+	-fx-border-style: solid;
+	-fx-border-radius: 30px;
+	-fx-border-width: 7px;
+	-fx-border-color: #431B89;
+}
+#p_toolbar Button{
+	-fx-background-color: #E0B85C;
+	-fx-background-radius: 25px;
+}
+
+#p_toolbar Button:hover{
+	-fx-background-color: #FFE4A3;
+	-fx-background-radius: 25px;
+}
+
+#p_sidebar Button{
+	-fx-background-color: #E0B85C;
+	-fx-background-radius: 25px;
+}
+
+#p_sidebar Button:hover{
+	-fx-background-color: #FFE4A3;
+	-fx-background-radius: 25px;
+}
+
+#p_display{
+	-fx-background-color: White;
+}
+
+#cb_style_picker {
+	-fx-background-color: #E0B85C;
+}
+
+#cb_style_picker:pressed {
+	-fx-background-color: #FFE4A3;
+}
+
+#p_accept_bar Button{
+	-fx-background-color: #E0B85C;
+	-fx-background-radius: 25px;
+}
+
+#p_accept_bar Button:hover{
+	-fx-background-color: #FFE4A3;
+	-fx-background-radius: 25px;
+}
+
+Button:pressed{
+	-fx-rotate: 10;
+}

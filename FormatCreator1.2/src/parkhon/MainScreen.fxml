@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="899.0" prefWidth="1302.0" text="Format Creator" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="parkhon.FormatCreatorController">
+   <content>
+      <BorderPane fx:id="p_root" prefHeight="200.0" prefWidth="200.0">
+         <left>
+            <VBox fx:id="p_sidebar" prefHeight="671.0" prefWidth="318.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="232.0" prefWidth="293.0">
+                     <children>
+                        <HBox prefHeight="125.0" prefWidth="293.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="100.0" prefWidth="110.0">
+                                 <children>
+                                    <Button fx:id="b_margin" mnemonicParsing="false" onAction="#onMargin" prefHeight="97.0" prefWidth="110.0">
+                                       <graphic>
+                                          <VBox alignment="CENTER" prefHeight="89.0" prefWidth="110.0">
+                                             <children>
+                                                <ImageView fitHeight="79.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../res/ic_margin_large.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label text="Margin" />
+                                             </children>
+                                          </VBox>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="100.0" prefWidth="90.0">
+                                 <children>
+                                    <CheckBox fx:id="c_margin_small" mnemonicParsing="false" onAction="#onMarginSmall" text="Small" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="100.0" prefWidth="90.0">
+                                 <children>
+                                    <CheckBox fx:id="c_margin_large" mnemonicParsing="false" onAction="#onMarginLarge" text="Large" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="100.0" prefWidth="110.0">
+                                 <children>
+                                    <Button fx:id="b_open_question" mnemonicParsing="false" onAction="#onOpenQuestion">
+                                       <graphic>
+                                          <VBox alignment="CENTER" prefHeight="89.0" prefWidth="110.0">
+                                             <children>
+                                                <ImageView fitHeight="99.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../res/ic_open_question.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label text="Open Question" />
+                                             </children>
+                                          </VBox>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="100.0" prefWidth="60.0">
+                                 <children>
+                                    <CheckBox fx:id="c_open_question_1" mnemonicParsing="false" onAction="#onOpenQuestion1" text="1" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="100.0" prefWidth="60.0">
+                                 <children>
+                                    <CheckBox fx:id="c_open_question_2" mnemonicParsing="false" onAction="#onOpenQuestion2" text="2" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="100.0" prefWidth="60.0">
+                                 <children>
+                                    <CheckBox fx:id="c_open_question_3" mnemonicParsing="false" onAction="#onOpenQuestion3" text="3" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <GridPane prefHeight="485.0" prefWidth="303.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="b_header" mnemonicParsing="false" onAction="#onHeader">
+                           <graphic>
+                              <VBox alignment="CENTER" prefHeight="128.0" prefWidth="128.0">
+                                 <children>
+                                    <ImageView fitHeight="136.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../res/ic_header.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label text="Header" />
+                                 </children>
+                              </VBox>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="b_triple_text_box" mnemonicParsing="false" onAction="#onTripleTextBox" GridPane.columnIndex="1">
+                           <graphic>
+                              <VBox alignment="CENTER" prefHeight="145.0" prefWidth="115.0">
+                                 <children>
+                                    <ImageView fitHeight="152.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../res/ic_triple_text_box.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label text="Triple Text Box" />
+                                 </children>
+                              </VBox>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="b_label" mnemonicParsing="false" onAction="#onLabel" GridPane.rowIndex="1">
+                           <graphic>
+                              <VBox alignment="CENTER" prefHeight="145.0" prefWidth="113.0">
+                                 <children>
+                                    <ImageView fitHeight="149.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../res/ic_label.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label text="Label" />
+                                 </children>
+                              </VBox>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="b_submit" mnemonicParsing="false" onAction="#onSubmit" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <graphic>
+                              <VBox alignment="CENTER" prefHeight="135.0" prefWidth="114.0">
+                                 <children>
+                                    <ImageView fitHeight="153.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../res/ic_submit_button.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label text="Submit Button" />
+                                 </children>
+                              </VBox>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="b_logo" mnemonicParsing="false" onAction="#onLogo" GridPane.rowIndex="2">
+                           <graphic>
+                              <VBox alignment="CENTER" prefHeight="145.0" prefWidth="113.0">
+                                 <children>
+                                    <ImageView fitHeight="149.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../res/ic_logo.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label text="Logo" />
+                                 </children>
+                              </VBox>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <padding>
+                  <Insets right="15.0" />
+               </padding>
+            </VBox>
+         </left>
+         <top>
+            <GridPane fx:id="p_toolbar" alignment="CENTER" prefHeight="128.0" prefWidth="1281.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="b_save_form" mnemonicParsing="false" onAction="#onSaveForm" prefHeight="77.0" prefWidth="57.0">
+                           <graphic>
+                              <VBox alignment="CENTER" prefHeight="78.0" prefWidth="61.0">
+                                 <children>
+                                    <ImageView fitHeight="72.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../res/ic_save_form.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="17.0" prefWidth="58.0" text="Save Form" />
+                                 </children>
+                              </VBox>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                     <children>
+                        <Button fx:id="b_load_form" mnemonicParsing="false" onAction="#onLoadForm">
+                           <graphic>
+                              <VBox alignment="CENTER" prefHeight="51.0" prefWidth="59.0">
+                                 <children>
+                                    <ImageView fitHeight="83.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../res/ic_load_form.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label text="Load Form" />
+                                 </children>
+                              </VBox>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+                     <children>
+                        <Button fx:id="b_edit_element_style" mnemonicParsing="false" onAction="#onEditElementStyle">
+                           <graphic>
+                              <VBox alignment="CENTER" prefHeight="73.0" prefWidth="79.0">
+                                 <children>
+                                    <ImageView fitHeight="125.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../res/ic_edit_prefs.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label text="Element Style" />
+                                 </children>
+                              </VBox>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3">
+                     <children>
+                        <Button fx:id="b_edit_global_style" mnemonicParsing="false" onAction="#onEditGlobalStyle">
+                           <graphic>
+                              <VBox prefHeight="89.0" prefWidth="41.0">
+                                 <children>
+                                    <ImageView fitHeight="112.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../res/ic_load_prefs.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label text="Global Style" />
+                                 </children>
+                              </VBox>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </GridPane>
+         </top>
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <bottom>
+                  <GridPane fx:id="p_accept_bar" prefHeight="82.0" prefWidth="1281.0" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <GridPane prefHeight="50.0" prefWidth="427.0" GridPane.columnIndex="1">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Button fx:id="b_cursor_back" mnemonicParsing="false" onAction="#onCursorBack">
+                                       <graphic>
+                                          <ImageView fitHeight="75.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../res/ic_back.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <Button fx:id="b_cursor_next" mnemonicParsing="false" onAction="#onCursorNext">
+                                       <graphic>
+                                          <ImageView fitHeight="81.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../res/ic_forward.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </GridPane>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+                           <children>
+                              <Button fx:id="b_delete_element" mnemonicParsing="false" onAction="#onDeleteElement">
+                                 <graphic>
+                                    <ImageView fitHeight="94.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../res/ic_delete_element.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Button fx:id="b_edit_element" mnemonicParsing="false" onAction="#onEditElement">
+                                 <graphic>
+                                    <ImageView fitHeight="127.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../res/ic_edit_element.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </GridPane>
+               </bottom>
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+               <center>
+                  <StackPane fx:id="p_display" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </content>
+</TitledPane>

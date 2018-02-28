@@ -1,0 +1,211 @@
+/* $FormatEditorStyle$Default$End */
+/* $FormatEditorMetadata$Header$End */
+.buap_form_header.styled_Default{
+				border: 8px solid #558412;
+				border-radius: 20px;
+				background-color: #558412;
+				/*background-image: url("images/tbg_leaves_autumn_1.jpg");*/
+				overflow: auto;
+				width: 90%;
+				margin: 8px auto;
+}
+.buap_form_header.styled_Default h1, h2, h3, h4{
+				display: inline-block;
+				color: white;
+				margin-left: 25px;
+				font-family: verdana;
+				border-bottom-style: solid;
+}
+.buap_form_header.styled_Default img{
+				float: left;
+				margin: auto, 25px;
+				vertical-align: middle;
+}
+/* $FormatEditorEndTag */
+/* $FormatEditorMetadata$Label$End */
+.buap_form_label.styled_Default {
+				width: 70%;
+				margin: 0px auto;
+}
+
+.buap_form_label.styled_Default p{
+				text-align: center;
+				font-size: 1.2em;
+}
+/* $FormatEditorEndTag */
+/* $FormatEditorMetadata$Margin$End */
+.buap_form_small_margin.styled_Default p{
+				margin: 2em 0px;	
+}
+
+.buap_form_large_margin.styled_Default p{
+				margin: 3em 0px;
+}
+/* $FormatEditorEndTag */
+/* $FormatEditorMetadata$Submit$End */
+.buap_form_submit.styled_Default {
+				width: 90%;
+				margin: 0px auto;
+}
+
+.buap_form_submit.styled_Default span{
+				display: inline-block;
+				margin: 0px auto;
+				text-align: center;
+				width: 100%;
+}
+
+.buap_form_submit.styled_Default input{
+				display: inline-block;
+				color: black;
+				background-color: #00b5e2;
+				padding: 8px 14px;
+				border-radius: 15px;
+				border: 4px solid #003b5c;
+				font-size: 18px;
+				font-weight: bold;
+				font-family: verdana;
+}
+/* $FormatEditorEndTag */
+/* $FormatEditorMetadata$OpenQuestion$End */
+.buap_open_question.styled_Default {
+				border: 2px solid #003b5c;
+				border-radius: 10px;
+				background-color: #c2d69b;
+				width: 90%;
+				overflow: auto;
+				margin: 8px auto;
+				padding: 0px 2% 0px 0px;
+}
+
+.buap_open_question.styled_Default span{
+				margin: 0px;
+				margin-left:1%;
+				display: inline-block;
+				vertical-align:middle;
+}
+
+.buap_open_question.styled_Default p{
+				margin: auto 0px auto 0px;
+				display:inline;
+				font-size: 12px;
+}
+.buap_open_question.styled_Default input {
+				width: 95%;
+}
+
+.buap_open_question.styled_Default .last_element{
+				text-align: right;
+				margin-right: 5px;
+}
+
+.buap_one_liner_open_question.styled_Default span{
+				width: 49%;
+}
+
+.buap_two_liner_open_question.styled_Default span{
+				width: 23%;
+}
+
+
+.buap_two_liner_open_question.styled_Default .subject_end{
+				margin-right: 2.5%;
+}
+
+.buap_three_liner_open_question.styled_Default span{
+				width: 15%;
+}
+
+.buap_three_liner_open_question.styled_Default input{
+				
+}
+
+.buap_three_liner_open_question.styled_Default .subject_end{
+				margin-right: 1%;
+}
+/* $FormatEditorEndTag */
+/* $FormatEditorMetadata$TripleBoxText$End */
+.buap_triple_text_box.styled_Default {
+				background-color: #003b5c;
+				width: 89%;
+				margin: 8px auto;
+				border-radius: 20px;
+				overflow: auto;
+				padding: 1%;
+				border: 3px solid #0ab2df;
+				height: 350px;
+}
+
+.buap_triple_text_box.styled_Default span{
+				display: inline-block;
+				border-right: 2px solid #0ab2df;
+				width: 31%;
+				margin-left: 1%;
+				text-align: justify;
+				padding-right: 1%;
+				height: 100%;
+				vertical-align:top;
+}
+
+.buap_trigle_text_box.styled_Default span:first-child{
+				clear: left;
+}
+
+.buap_triple_text_box.styled_Default span:last-child{
+				border-right-style: none;
+}
+
+.buap_triple_text_box.styled_Default p{
+				color: white;
+				font-size: 14px;
+				margin: 0px;
+}
+/* $FormatEditorEndTag */
+/* $FormatEditorMetadata$Logo$End */
+.buap_logo.styled_Default {
+                width: 90%;
+                overflow: auto;
+                margin: 8px auto;
+                padding: 0px 0% 0px 0px;
+}
+
+.buap_logo.styled_Default span {
+                display: inline-block;
+                text-align: justify;
+                height: 100%;
+                vertical-align: top;
+}
+
+.buap_logo.styled_Default .logo_decoration {
+                width: 65%;
+                float: right;
+}
+
+.buap_logo.styled_Default p {
+                border-bottom: 20px double #558412;
+                border-top: 20px double #558412;
+                font-size: 32px;
+}
+/* $FormatEditorEndTag */
+/* $FormatEditorMetadata$General$End */
+#content {
+				width: 90%;
+				height: 50%;
+				margin: auto;
+				background-color: #fff;
+				padding-top: 30px;
+				padding-bottom: 30px;
+				border: 15px double #003b5c;
+				border-left-style: none;
+				border-right-style: none;
+}
+.buap_cursor {
+    border: 6px dashed #FF282F;
+    border-radius: 40px;
+    background-color: #FFE575;
+    width: 100%;
+    overflow: auto;
+    margin: 0px 0px;
+    padding: 0px 0% 0px 0px;
+}
+/* $FormatEditorEndTag */
